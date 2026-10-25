@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tidyfolder"
+version = "0.1.0"
+description = "A safe, local-first CLI that tidies messy folders without ever deleting a file."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Asdale Dynamics, LLC" }]
+keywords = ["files", "organizer", "tidy", "archive", "ollama", "llm"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Desktop Environment :: File Management",
+]
+dependencies = []
+
+[project.scripts]
+tidyfolder = "tidyfolder.cli:main"
+
+[project.urls]
+Homepage = "https://dylanasdale.github.io"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
