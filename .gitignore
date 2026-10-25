@@ -1,8 +1,13 @@
+*.egg-info/
+*.py[cod]
+*.pyc
+.env
+.env.*
 .venv/
 __pycache__/
-*.py[cod]
-*.egg-info/
 build/
 dist/
-tidy-undo.json
+dist/*.tmp
+node_modules/
 tidy-rules.toml
+tidy-undo.json
